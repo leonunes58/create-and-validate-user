@@ -24,6 +24,6 @@
 </div>
 
 <h2>Implementações futuras</h2>
-<p>Criação da interface.</p>
+<p>Criação do layout da página.</p>
 <h2>Atualizações</h2>
-<p>Projeto inciado!</p>
+<p>Finalização do back-end, constituido pelas rotas de Login e Criação de usuário.</p>
