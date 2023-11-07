@@ -1,11 +1,8 @@
-import { Sequelize } from "sequelize-typescript"
-const connection = new Sequelize({
-    database: 'validate_user',
-    dialect: 'mysql',
-    username: 'root',
-    password: '',
-    storage: ':memory:',
-    models: [__dirname + '/model'], 
-    validateOnly: true
-  });
+import { Sequelize } from "sequelize";
+
+const connection = new Sequelize(`validate_user`, "root", "", {
+  port: 3307,
+  dialect: "mysql",
+  logging: false
+});
 export default connection;
