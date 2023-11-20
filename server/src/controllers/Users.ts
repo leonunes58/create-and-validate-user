@@ -12,9 +12,8 @@ interface UserCreate {
 }
 
 export const createUser = async(req: Request, res: Response) => {
-    const {name, email, password, confirmePassword, role} = req.body;
+    const {name, email, password, role} = req.body;
     try {
-        if(password !== confirmePassword) return res.status(402).json({msg: "Os campos de senhas devem ser iguais!"})
         const hashPassword: string = await argon2.hash(password);
         const resCreateUser = await User.create<Model, CreateOptions<UserCreate>>({
             name: name,

@@ -26,3 +26,10 @@ a{
   border-radius: 6px;
   border: 2px solid #30363d;
 }
+
+.confirme-user {
+  color: green;
+}
+.error-user {
+  color: rgb(255, 0, 0);
+}
